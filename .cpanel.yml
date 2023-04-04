@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/maestral/public_html/
+    - /bin/cp -rf $DEPLOYPATH/html/* $DEPLOYPATH/public_html
+    - /bin/cp -rf $DEPLOYPATH/css/* $DEPLOYPATH/public_html/css
+    - /bin/cp -rf $DEPLOYPATH/imagenes/* $DEPLOYPATH/public_html/imagenes
+    - /bin/cp -rf $DEPLOYPATH/videos/* $DEPLOYPATH/public_html/videos
